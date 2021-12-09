@@ -1,0 +1,269 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* element selectors by parent */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* class in alpha order */
+.ai-c {
+  align-items: center;
+}
+
+.bd-0 {
+  border: 0;
+}
+
+.bgc-boringblue {
+  background-color: rgb(37, 137, 189);
+}
+
+.bgc-vibrantpink {
+  background-color: rgb(248, 69, 177);
+}
+
+.bgc-lightgray {
+  background-color: lightgray;
+}
+
+/* colors that compliment background color main-pink #ffc6e7 */
+.bgc-mainpink {
+  background-color: #ffc6e7;
+}
+
+.bgc-compblue {
+  background-color: #3eaff7;
+}
+
+.bgc-compgreen {
+  background-color: #6be043;
+}
+
+.bgc-comporange {
+  background-color: #f7b43e;
+}
+
+/* returning to alpha */
+
+.bgc-royalblue {
+  background-color: royalblue;
+}
+
+.bgc-steelblue {
+  background-color: steelblue;
+}
+
+.bgi-ling {
+  background-image: linear-gradient
+    (rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+}
+
+.bdrs-10 {
+  border-radius: 10px;
+}
+
+/* colors that compliment background color main-pink #ffc6e7 */
+
+.c-mainpink {
+  color: #ffc6e7;
+}
+
+.c-compblue {
+  color: #3eaff7;
+}
+
+.c-comporange {
+  color: #f7b43e;
+}
+
+.c-compgreen {
+  color: #6be043;
+}
+
+.c-comppurple {
+  color: #e03bed;
+}
+
+/*continuing alphabetically*/
+
+.c-white {
+  color: white;
+}
+
+.d-f {
+  display: flex;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.h-5 {
+  height: 5rem;
+}
+
+.ff-impact {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.fg-1 {
+  flex-grow: 1;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fx-1 {
+  flex: 1 0 0;
+}
+
+.fxd-c {
+  flex-direction: column;
+}
+
+.fz-1 {
+  font-size: 1rem;
+}
+
+.fz-2 {
+  font-size: 2rem;
+}
+
+.g {
+  gap: 1.5rem;
+}
+
+.h-100vh {
+  max-height: 100vh;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-sa {
+  justify-content: space-around;
+}
+
+.lh-2 {
+  line-height: 2rem;
+}
+
+.lis-n {
+  list-style: none;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.ma {
+  margin: auto;
+}
+
+.ml {
+  margin-left: 1.5rem;
+}
+
+.mt {
+  margin-top: 1.5rem;
+}
+
+.mh-90 {
+  max-height: 90%;
+}
+
+.mw-60 {
+  max-width: 60rem;
+}
+
+.mx-85 {
+  max-width: 85rem;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.p {
+  padding: 1.5rem;
+}
+
+.p\+ {
+  padding: 3rem;
+}
+
+.pl {
+  padding-left: 1.5rem;
+}
+
+.pos-stky {
+  position: sticky;
+}
+
+.t0 {
+  top: 0;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* media query */
+@media (min-width: 768px) {
+  .d-f\@lrg {
+    display: flex;
+  }
+
+  .fg-1\@lrg {
+    flex-grow: 1;
+  }
+
+  .fg-4\@lrg {
+    flex-grow: 4;
+  }
+
+  .ml\@lrg {
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .p\@md {
+    padding: 1.5rem;
+  }
+}
