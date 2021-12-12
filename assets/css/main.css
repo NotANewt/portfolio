@@ -1,4 +1,21 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
+/*variables for colors*/
+:root {
+  --mainpink: #ffc6e7;
+  --mainblue: #4273e4;
+  --maingreen: #59cb92;
+  --mainorange: #f9af4f;
+  --mainvibepink: #f53da8;
+}
+
+/*variables for sizing */
+:root {
+  --font-unit-lrg: 2rem;
+  --spacing-unit: 1.5rem;
+  --spacing-unit-small: 0.75rem;
+}
+
+/* apply a natural box layout model to all elements, 
+but allowing components to change */
 html {
   box-sizing: border-box;
 }
@@ -27,74 +44,98 @@ a {
   border: 0;
 }
 
-.bgc-boringblue {
-  background-color: rgb(37, 137, 189);
-}
-
-.bgc-vibrantpink {
-  background-color: rgb(248, 69, 177);
-}
-
-.bgc-lightgray {
-  background-color: lightgray;
-}
-
-/* colors that compliment background color main-pink #ffc6e7 */
-.bgc-mainpink {
-  background-color: #ffc6e7;
-}
-
 .bgc-compblue {
-  background-color: #3eaff7;
+  background-color: var(--mainblue);
 }
 
 .bgc-compgreen {
-  background-color: #6be043;
+  background-color: var(--maingreen);
 }
 
 .bgc-comporange {
-  background-color: #f7b43e;
+  background-color: var(--mainorange);
 }
 
-/* returning to alpha */
-
-.bgc-royalblue {
-  background-color: royalblue;
+.bgc-mainpink {
+  background-color: var(--mainpink);
 }
 
-.bgc-steelblue {
-  background-color: steelblue;
+.bgc-vibrantpink {
+  background-color: var(--mainvibepink);
 }
 
-.bgi-ling {
-  background-image: linear-gradient
-    (rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+.bgg-blue {
+  background: rgb(66, 115, 228);
+  background: linear-gradient(
+    31deg,
+    rgba(66, 115, 228, 1) 0%,
+    rgba(71, 159, 237, 1) 36%,
+    rgba(80, 193, 238, 1) 100%
+  );
+}
+
+.bgg-green {
+  background: rgb(89, 203, 146);
+  background: linear-gradient(
+    31deg,
+    rgba(89, 203, 146, 1) 0%,
+    rgba(113, 223, 150, 1) 36%,
+    rgba(127, 234, 154, 1) 100%
+  );
+}
+
+.bgg-orange {
+  background: rgb(249, 175, 79);
+  background: linear-gradient(
+    31deg,
+    rgba(249, 175, 79, 1) 0%,
+    rgba(253, 185, 87, 1) 36%,
+    rgba(254, 236, 115, 1) 100%
+  );
+}
+
+.bgg-vibepink {
+  background: rgb(245, 61, 168);
+  background: linear-gradient(
+    31deg,
+    rgba(245, 61, 168, 1) 0%,
+    rgba(253, 91, 193, 1) 36%,
+    rgba(255, 111, 209, 1) 100%
+  );
 }
 
 .bdrs-10 {
   border-radius: 10px;
 }
 
+.brd-2 {
+  border: 1px solid white;
+}
+
+.brdr- {
+  border-radius: var(--spacing-unit-small);
+}
+
+.bxs-1-hv:hover {
+  box-shadow: white inset 0px 0px 12px;
+}
+
 /* colors that compliment background color main-pink #ffc6e7 */
 
 .c-mainpink {
-  color: #ffc6e7;
+  color: var(--mainpink);
 }
 
 .c-compblue {
-  color: #3eaff7;
+  color: var(--mainblue);
 }
 
 .c-comporange {
-  color: #f7b43e;
+  color: var(--mainorange);
 }
 
 .c-compgreen {
-  color: #6be043;
-}
-
-.c-comppurple {
-  color: #e03bed;
+  color: var(maingreen);
 }
 
 /*continuing alphabetically*/
@@ -135,6 +176,10 @@ a {
   flex-direction: column;
 }
 
+.fxw-w {
+  flex-wrap: wrap;
+}
+
 .fz-1 {
   font-size: 1rem;
 }
@@ -147,6 +192,14 @@ a {
   gap: 1.5rem;
 }
 
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
 .h-100vh {
   max-height: 100vh;
 }
@@ -155,12 +208,20 @@ a {
   justify-content: center;
 }
 
+.jc-e {
+  justify-content: end;
+}
+
 .jc-sb {
   justify-content: space-between;
 }
 
 .jc-sa {
   justify-content: space-around;
+}
+
+.l-50 {
+  left: 50%;
 }
 
 .lh-2 {
@@ -199,6 +260,18 @@ a {
   max-width: 85rem;
 }
 
+.out-1 {
+  outline: 2px white solid;
+}
+
+.p {
+  padding: var(--spacing-unit);
+}
+
+.p- {
+  padding: var(--spacing-unit-small);
+}
+
 .p0 {
   padding: 0;
 }
@@ -207,8 +280,8 @@ a {
   padding: 20px;
 }
 
-.p {
-  padding: 1.5rem;
+.p- {
+  padding: var(--spacing-unit-small);
 }
 
 .p\+ {
@@ -219,8 +292,25 @@ a {
   padding-left: 1.5rem;
 }
 
+.pos-a {
+  position: absolute;
+}
+
+.pos-r {
+  position: relative;
+}
+
 .pos-stky {
   position: sticky;
+}
+
+.pv- {
+  padding-top: var(--spacing-unit-small);
+  padding-bottom: var(--spacing-unit-small);
+}
+
+.t-n1p5 {
+  top: -1.5rem;
 }
 
 .t0 {
@@ -231,8 +321,28 @@ a {
   text-align: center;
 }
 
+.ta-e {
+  text-align: end;
+}
+
+.trf-1 {
+  transform: translate(-50%, 0);
+}
+
+.trn-1 {
+  transition: all 0.5s ease-in-out;
+}
+
+.us-all-a:active {
+  user-select: all;
+}
+
 .w-100vw {
   width: 100vw;
+}
+
+.w-10 {
+  width: 10%;
 }
 
 .w-50 {
@@ -265,5 +375,17 @@ a {
 @media (min-width: 600px) {
   .p\@md {
     padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .miw-100\@sml {
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .miw-45\@lrg {
+    min-width: 45%;
   }
 }
