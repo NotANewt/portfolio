@@ -252,8 +252,16 @@ a {
   max-height: 90%;
 }
 
-.mw-60 {
+.mx-30 {
+  max-width: 30rem;
+}
+
+.mx-60 {
   max-width: 60rem;
+}
+
+.mx-70 {
+  max-width: 70rem;
 }
 
 .mx-85 {
@@ -289,7 +297,7 @@ a {
 }
 
 .pl {
-  padding-left: 1.5rem;
+  padding-left: var(--spacing-unit);
 }
 
 .pos-a {
@@ -368,13 +376,13 @@ a {
   }
 
   .ml\@lrg {
-    margin-left: 1.5rem;
+    margin-left: var(--spacing-unit);
   }
 }
 
 @media (min-width: 600px) {
   .p\@md {
-    padding: 1.5rem;
+    padding: var(--spacing-unit);
   }
 }
 
