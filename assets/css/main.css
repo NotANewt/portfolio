@@ -236,6 +236,10 @@ a {
   margin: 0;
 }
 
+.m1 {
+  margin: 1rem;
+}
+
 .ma {
   margin: auto;
 }
@@ -349,12 +353,28 @@ a {
   width: 100vw;
 }
 
+.w-5 {
+  width: 5%;
+}
+
 .w-10 {
   width: 10%;
 }
 
+.w-30 {
+  width: 30%;
+}
+
 .w-50 {
   width: 50%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-70 {
+  width: 70%;
 }
 
 .w-100 {
@@ -395,5 +415,17 @@ a {
 @media screen and (min-width: 768px) {
   .miw-45\@lrg {
     min-width: 45%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .miw-31\@lrg {
+    min-width: 31%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mxw-31\@lrg {
+    max-width: 31%;
   }
 }
