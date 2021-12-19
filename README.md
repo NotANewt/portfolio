@@ -10,7 +10,7 @@ When the user resizes the page or views the site on various screens and devices,
 
 # Screenshot
 
-![The portfolio webpage includes a navigation bar, a header image, an about me section, cards with links to previous work, a contact me section, and a footer the bottom of the page.](./assets/images/portfolio_ss.PNG)
+![The portfolio webpage includes a navigation bar, a header image, an about me section, cards with links to previous work, a contact me section, and a footer the bottom of the page.](./assets/img/portfolio_ss.PNG)
 
 ## Links To Application:
 
