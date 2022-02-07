@@ -2,155 +2,28 @@
 
 # Description
 
-This is my deployed portfolio of my previous work. When the portfolio is loaded, the user is presented with my name, a recent photo or avatar, and links to sections about me, my work, and how to contact me.
+This app is an updated portfolio of my previous work. When the app is loaded, the user is presented with an aside on the left with my name, a headshot, a bio, and a button that opens up a pdf of my resume in a new tab. At the top right, there is a Contact Me dropdown menu with links to my github and LinkedIn profiles, along with a link that will open up an email to my current professional email address.
 
-When the links in the navigation are clicked, the UI scrolls to the corresponding section. When the user clicks on the link to the section about my work, the UI scrolls to a section with titled images of my applications. When the user hovers over an application, the box grows in size. When the user clicks on the application's image, they are taken to the deployed application in a new tab.
+There is also a section of "My Work", which has cards of my previous projects. Each card includes the title of the app, a screenshot, a link to the github repository, and a link to the deployed version. The four projects include my Group Project 1, Do You Need An Umbrella?, the Weather Dashboard, the Coding Quiz, and the Password Generator. When the user hovers over the card, the box grows in size and has a white box shadow.
+
+At the bottom of the page is a footer with text "Made with 💙 and Bootstrap by Meegan Anderson 2022".
 
 When the user resizes the page or views the site on various screens and devices, they will be presented with a responsive layout that adapts to their viewpoint.
 
-# Screenshot
+# Screenshot of app on a desktop
 
-![The portfolio webpage includes a navigation bar, a header image, an about me section, cards with links to previous work, a contact me section, and a footer the bottom of the page.](./assets/img/portfolio_ss.PNG)
+![A screenshot of the portfolio app opened on a desktop that includes a navigation bar with a dropdown menu with links to github, LinkedIn, and Email, a headshot, a bio section, a button that opens a pdf of a resume, cards with links to previous work, and a footer the bottom of the page.](./assets/img/portfolio_v2_desktop_ss.PNG)
 
-## Links To Application:
+# Screenshot of app on a mobile device
+
+![A screenshot of the portfolio app opened on a desktop that includes a navigation bar with a dropdown menu with links to github, LinkedIn, and Email, a headshot, a bio section, a button that opens a pdf of a resume, cards with links to previous work, and a footer the bottom of the page.](./assets/img/portfolio_v2_mobile_ss.PNG)
+
+# Contact Information
+
+- NotANewt's email: [Email Me](mailto:meegan.r.anderson@gmail.com)
+- NotANewt's gitHub profile: [NotANewt/profile](https://github.com/NotANewt)
+
+# Links To Application:
 
 - Here is the repo: [NotANewt/portfolio](https://github.com/NotANewt/portfolio)
 - Here is the pages: [NotANewt/pages](https://notanewt.github.io/portfolio/)
-
-# 08 Project 1: Professional Materials
-
-Now that you've had some practice with APIs and have a project to share, you'll be updating your portfolio page and other materials to build toward being employer-competitive.
-
-If you are opting out of career services, this is _still a required assignment_. Part of being a web developer means being a part of a community. Having a place to share your projects is _necessary_ if you're applying for jobs, but it's also _critical_ on your journey as a developer.
-
-## Homework Requirements - what to add to the update
-
-- Updated portfolio featuring Project 1 and two exemplary homework assignments.
-
-- Updated GitHub profile with pinned repositories featuring Project 1 and two exemplary assignments.
-
-- Updated resume
-
-- Updated LinkedIn profile
-
-## Grading
-
-| Requirement      | Weight |
-| ---------------- | ------ |
-| Portfolio        | 40%    |
-| GitHub Profile   | 40%    |
-| Resume           | 10%    |
-| LinkedIn Profile | 10%    |
-
-## Instructions
-
-1. [Updated Portfolio](#updated-portfolio)
-
-2. [Updated GitHub Profile](#updated-github-profile)
-
-3. [Updated Resume](#updated-resume)
-
-4. [Updated LinkedIn](#updated-linkedin)
-
-## Updated Portfolio
-
-💁 Need help updating your Portfolio? Check out the [career services milestone resources for online presence](https://mycareerspot.org/onlinepresence).
-
-Your updated portfolio should:
-
-1. Display your contact information. If you don't want to share your personal email or phone number, use a separate email that you will only use for coding, also known as a developer email, and/or a call forwarding service, such as [Google Voice](https://voice.google.com/).
-
-2. Have links to your GitHub profile and LinkedIn profile
-
-3. Have a link to a downloadable PDF of your resume
-
-4. Display at least 2 examples of student work from either deployed projects or homeworks. For each project, make sure you have the following:
-
-   - Project title
-
-   - Link to the deployed version
-
-   - Link to the GitHub repository
-
-   - Screenshot of the deployed application
-
-5. Have a polished, mobile-responsive user interface.
-
-### Design
-
-Unfortunately, this is where it gets a little bit subjective. Your site should look
-"polished." Here are a few guidelines on what that means:
-
-- Mobile-first design
-
-- Choose a color palette for your site so it doesn't just look like the default bootstrap theme or an unstyled HTML site.
-
-- Make sure the font size is large enough to read, and that the colors don't cause eye strain.
-
-## Updated GitHub Profile
-
-Employers (and potential collaborators) _will_ look at your GitHub profile, so put your best face forward.
-
-Your GitHub profile must contain at least the following items:
-
-1. Profile picture or avatar
-
-- A photo or an avatar other than the default Github identicon. (a semi-professional to professional photo or an avatar photo are preferred)
-
-2. Biography
-
-3. Email address. If you don't want to share your personal email or phone number, use a developer email.
-
-4. Link to your deployed portfolio
-
-5. At least 2 pinned repositories:
-
-   - Navigate to [GitHub](https://github.com/) and go to your profile.
-
-   - Click "Customize your pins"
-
-   - Click the checkboxes for your project and 2-3 homework assignments that you would like to share
-
-6. Follow a few of your classmates and/or other developers. They are the beginning of your professional network and being a developer is as much about being a part of the community as it is writing code.
-
-7. README files. Every pinned project should contain a README file with:
-
-   - Title of app
-
-   - Live link to deployed app
-
-   - List of technologies used
-
-   - 1-2 sentences explaining what the app is
-
-   - 2-3 Screenshots / gifs of the app
-
-   - License (usually MIT)
-
-   - Contact information for you and any collaborators
-
-8. Commit history. Every pinned repository should have at least 20 commits.
-
-## Updated Resume
-
-💁 Need help building a resume? Check out the [career services milestone resources](https://mycareerspot.org/resume).
-
-Submit a clear, concise, and compelling resume, tailored to the type of job you’re looking for.
-
-Your resume should include:
-
-- a heading with your name, phone number, professional email address, links to LinkedIn, portfolio and GitHub. If you don't want to share your personal email or phone number, use a separate email that you will only use for coding, also known as a developer email, and/or a call forwarding service, such as [Google Voice](https://voice.google.com/).
-
-- a technical skills section, with all programming languages and technologies listed
-
-- 3 of your strongest projects/homework assignments with brief description, languages used, and URL
-
-## Updated LinkedIn
-
-💁 Need help updating your LinkedIn? Check out the [career services milestone resources for online presence](https://mycareerspot.org/onlinepresence).
-
-Update your LinkedIn Profile with a strong bio statement, a professional photo, and links to your Github and portfolio.
-
----
-
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
