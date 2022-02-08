@@ -13,6 +13,10 @@
   width: 18rem;
 }
 
+.pic-width {
+  width: 50%;
+}
+
 /* media queries */
 @media screen and (max-width: 600px) {
   .card-size {
