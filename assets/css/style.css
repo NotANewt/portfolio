@@ -3,12 +3,6 @@
   font-family: "Orbitron", sans-serif;
 }
 
-.card:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 5px 5px 15px white;
-  transform: scale(1.1);
-}
-
 .card-size {
   width: 18rem;
 }
@@ -20,11 +14,6 @@
 .flex-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.t-a-j {
-  text-align: justify;
 }
 
 /* media queries */

@@ -21,7 +21,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-primary">
         <div class="container-fluid mx-2">
-            <h1>Meegan</h1>
+            <h1>MRA</h1>
 
             <!-- Contact Me dropdown -->
             <div class="justify-content-end" id="navbarNavDarkDropdown">
@@ -46,17 +46,17 @@
 
     <div class="container-fluid">
 
-        <div id="content" class="row flex-container">
+        <div id="content" class="row">
             <!-- Left: Bio Aside -->
-            <aside class="col pt-1 pb-3 d-flex flex-column align-items-center border-bottom border-primary">
+            <aside class="col pt-1 pb-3 d-flex flex-column align-items-center">
                 <!-- bio pic -->
                 <img src="./assets/img/profile_pic.png" class="img-fluid p-0 pic-width"
                     alt="black and white headshot of Meegan">
                 <!-- bio text -->
-                <div class="px-4">
+                <div class="px-4 pb-3 text-center border-bottom border-primary">
                     <h3>Hello! My name is Meegan.</h3>
                     <br>
-                    <p class="text-justify">I'm a Front End developer and scientist that loves dogs, yoga, weight
+                    <p>I'm a Front End developer and scientist that loves dogs, yoga, weight
                         lifting, and video games!
                     </p>
                     <p>I am currently enrolled in a Coding Bootcamp, and am moving towards becoming a Full Stack
@@ -65,19 +65,18 @@
                         development, and I can't wait to dive deeper into Back End development!</p>
                     <p> Check out my work to see what I can do! If you like what you see, click the button below to open
                         my resume, and contact me through the links at the top! </p>
+                    <!-- resume button -->
+                    <a href="./Meegan Anderson_Resume_WebDev_220206.pdf" target="_blank" class="btn btn-primary"
+                        tabindex="-1" role="button">Resume</a>
                 </div>
-                <!-- resume button -->
-                <a href="./Meegan Anderson_Resume_WebDev_220206.pdf" target="_blank" class="btn btn-primary"
-                    tabindex="-1" role="button">Resume</a>
-
             </aside>
 
             <!-- Right: Projects -->
-            <div class="col col-md-9 col-lg-7 pt-3">
+            <div class="col pt-3">
 
                 <!-- my work -->
-                <div class="container px-4">
-                    <h2 class="d-flex justify-content-start ms-3">My Work</h2>
+                <div class="container px-4 text-center">
+                    <h2>My Work</h2>
                     <div id="project div" class="row gx-5">
                         <!-- Project 1: Do You Need An Umbrella? -->
                         <div class="col">
@@ -85,7 +84,33 @@
                                 <img src="./assets/img/do_you_need_an_umbrella_ss.png" class="card-img-top img-fluid"
                                     alt="Screen shot of Do You Need An Umbrella app">
                                 <div class="card-body bg-dark">
-                                    <h5 class="card-title">Do You Need An Umbrella?</h5>
+                                    <h5 class="card-title pb-4">Do You Need An Umbrella?</h5>
+                                    <a class="btn btn-primary d-block my-2" data-toggle="collapse"
+                                        href="#collapseUmbrellaDesc" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        App Description
+                                    </a>
+                                    <div class="collapse" id="collapseUmbrellaDesc">
+                                        <div class="card card-body bg-dark">
+                                            <p>
+                                                A simple weather application that runs in the
+                                                browser and features dynamically updated HTML
+                                                and CSS powered by JavaScript.
+                                            </p>
+                                            <p>
+                                                Utilizes OpenWeather Current Weather API,
+                                                developers.giphy.com, and Geolocation.
+                                            </p>
+                                            <p>
+                                                A user shares their location information or enters a
+                                                zip code. They will then be presented with a text
+                                                box displaying the current weather description and
+                                                whether or not the user needs an umbrella. A
+                                                randomly picked gif in the theme of the current
+                                                weather is displayed as the background image.
+                                            </p>
+                                        </div>
+                                    </div>
                                     <a href="https://github.com/The-camelCasers/project" class="btn btn-primary d-block"
                                         target="_blank">Github
                                         Repository</a>
@@ -95,13 +120,40 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- Project 2: Weather Dashboard -->
                         <div class="col">
                             <div class="card card-size mx-3 my-4 mx-2">
                                 <img src="./assets/img/weather_dashboard_ss.png" class="card-img-top img-fluid"
                                     alt="Screen shot of Weather Dashboard app">
                                 <div class="card-body bg-dark">
-                                    <h5 class="card-title pb-3">Weather Dashboard</h5>
+                                    <h5 class="card-title pb-4 mb-4">Weather Dashboard</h5>
+                                    <a class="btn btn-primary d-block my-2" data-toggle="collapse"
+                                        href="#collapseWeatherDesc" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        App Description
+                                    </a>
+
+                                    <div class="collapse" id="collapseWeatherDesc">
+                                        <div class="card card-body bg-dark">
+                                            <p>
+                                                A weather dashboard with form inputs
+                                                that runs in the browser and features dynamically
+                                                updated HTML and CSS powered by Javascript.
+                                            </p>
+                                            <p>
+                                                Utilizes OpenWeather One Call API
+                                            </p>
+                                            <p>
+                                                A user shares their location information or enters a
+                                                city name. They are presented with the current
+                                                weather and a five-day forecast. The searched city
+                                                name is saved in local storage and appears as a
+                                                button. When clicked, the app updates with the
+                                                weather for that city.
+                                            </p>
+                                        </div>
+                                    </div>
                                     <a href="https://github.com/NotANewt/hw6_weather_dashboard"
                                         class="btn btn-primary d-block" target="_blank">Github
                                         Repository</a>
@@ -111,22 +163,44 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- Project 3: Code Quiz -->
                         <div class="col">
                             <div class="card card-size mx-3 my-4 mx-2">
                                 <img src="./assets/img/code_quiz_ss.png" class="card-img-top img-fluid"
                                     alt="Screen shot of Coding Quiz app">
                                 <div class="card-body bg-dark">
-                                    <h5 class="card-title pt-4 mb-4">Coding Quiz</h5>
+                                    <h5 class="card-title pt-4 pb-3 mb-4">Coding Quiz</h5>
+                                    <a class="btn btn-primary d-block my-2" data-toggle="collapse"
+                                        href="#collapseQuizDesc" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        App Description
+                                    </a>
+
+                                    <div class="collapse" id="collapseQuizDesc">
+                                        <div class="card card-body bg-dark">
+                                            <p>
+                                                A timed quiz application that runs in the browser and features
+                                                dynamically updated HTML and CSS powered by JavaScript.
+                                            </p>
+                                            <p>
+                                                The user is presented with a timed quiz on
+                                                JavaScript fundamentals. If they finish the quiz
+                                                within the time limit, they enter their initials, which
+                                                are saved to a high scores page.
+                                            </p>
+                                        </div>
+                                    </div>
                                     <a href="https://github.com/NotANewt/hw4_code_quiz"
-                                        class="btn btn-primary d-block mb-3" target="_blank">Github
+                                        class="btn btn-primary d-block my-2" target="_blank">Github
                                         Repository</a>
                                     <a href="https://notanewt.github.io/hw4_code_quiz/"
-                                        class="btn btn-primary d-block my-2 mb-3" target="_blank">Deployed
+                                        class="btn btn-primary d-block my-2" target="_blank">Deployed
                                         Application</a>
                                 </div>
                             </div>
                         </div>
+
                         <!-- Project 4: Work Day Scheduler -->
                         <div class="col">
                             <div class="card card-size mx-3 my-4 mx-2">
@@ -134,6 +208,32 @@
                                     alt="Screen shot of Work Day Scheduler app">
                                 <div class="card-body bg-dark">
                                     <h5 class="card-title">Work Day Scheduler</h5>
+                                    <a class="btn btn-primary d-block my-2" data-toggle="collapse"
+                                        href="#collapseSchedulerDesc" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        App Description
+                                    </a>
+
+                                    <div class="collapse" id="collapseSchedulerDesc">
+                                        <div class="card card-body bg-dark">
+                                            <p>
+                                                A simple scheduling application that runs in the
+                                                browser and features dynamically updated HTML
+                                                and CSS powered by jQuery. Moment.js is used to work with date and time.
+                                            </p>
+                                            <p>
+                                                When the site is opened, the user is presented with a daily planner with
+                                                the current day displayed at the top. When the user scrolls down, they
+                                                are presented with timeblocks for standard business hours. When they
+                                                view the timeblocks for that day, each timeblock is color coded to
+                                                indicate whether it is in the past (grey), present (red), or future
+                                                (green). When the user clicks into a timeblock, they can enter a new
+                                                event or replace an existing event with new text. When they click the
+                                                save button for that timeblock, the text for that event is saved in
+                                                local storage, so when they refresh the page, the saved events persist.
+                                            </p>
+                                        </div>
+                                    </div>
                                     <a href="https://github.com/NotANewt/hw5_day_planner"
                                         class="btn btn-primary d-block" target="_blank">Github
                                         Repository</a>
@@ -165,14 +265,19 @@
 
 
 
-
-
-    <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <!-- my javascript -->
-    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+<!-- my javascript -->
+<script src="./assets/js/script.js"></script>
 </body>
 
 </html>
