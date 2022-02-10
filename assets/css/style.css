@@ -8,12 +8,16 @@
 }
 
 .pic-width {
-  width: 50%;
+  width: 40%;
 }
 
 .flex-container {
   display: flex;
   flex-direction: column;
+}
+
+.z-index-front {
+  z-index: 9999;
 }
 
 /* media queries */
