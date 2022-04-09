@@ -2,7 +2,7 @@
 
 # Description
 
-This app is an updated portfolio of my previous work. When the app is loaded, the user is presented with an aside on the left with my name, a headshot, a bio, and a button that opens up a pdf of my resume in a new tab. At the top right, there is a Contact Me dropdown menu with links to my github and LinkedIn profiles, along with a link that will open up an email to my current professional email address.
+This app is an updated portfolio of my work. When the app is loaded, the user is presented with an aside on the left with my name, a headshot, a bio, and a button that opens up a pdf of my resume in a new tab. At the top right, there is a Contact Me dropdown menu with links to my github and LinkedIn profiles, along with a link that will open up an email to my current professional email address.
 
 There is also a section of "My Work", which has cards of my previous projects. Each card includes the title of the app, a screenshot, a link to the github repository, and a link to the deployed version. The four projects include my Group Project 1, Do You Need An Umbrella?, the Weather Dashboard, the Coding Quiz, and the Password Generator. When the user hovers over the card, the box grows in size and has a white box shadow.
 
