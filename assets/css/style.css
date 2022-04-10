@@ -51,3 +51,8 @@
 .center-content {
   text-align: center;
 }
+
+.ul-no-style-no-indent {
+  list-style-type: none;
+  padding-left: 0;
+}
