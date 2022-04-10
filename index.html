@@ -26,85 +26,75 @@
 
 <body>
 
-    <nav class="font-page navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <!-- TODO: Add dashes in between items -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Bio<span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Project Showcase</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Contact</a>
-                </li>
-            </ul>
+    <!-- Section: Nav -->
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse font-title" id="navbarNav">
+                <!-- TODO: Add dashes in between items -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me-section">Bio<span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills-section">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project-showcase-section">Project Showcase</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-me-section">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- section div - container div - row div - column divs -->
-
     <!-- Section: Bio -->
-    <div id="about-me-section" class="section-light">
+    <div id="about-me-section" class="section section-light">
 
         <div class="container">
 
-            <div class="row">
+            <div class="row justify-content-center">
 
                 <!-- headshot -->
                 <div id="about-me-img" class="col-sm">
-                    <img src="./assets/img/profile_pic_crop_square.png" class="img-fluid"
+                    <img src="./assets/img/profile_pic_crop_square.png" class="image-fluid"
                         alt="Black and white headshot of Meegan.">
                 </div>
 
                 <!-- About Me -->
                 <div id="about-me-text" class="col-sm">
-                    <h5 class="font-title">&#8212 About Me</h5>
+                    <h6 class="font-title">About Me</h6>
                     <h2 class="font-title">Meegan Anderson</h2>
-                    <div class="font-page">
+                    <div class="">
                         <p>I am a full stack web developer and scientist that enjoys video games, yoga, and weight
                             lifting! The logic and problem solving parts of a researcher's life have translated well to
                             development, and I love the challenge and creativity that comes with coding and debugging!
                         </p>
                     </div>
 
-                    <div class="row font-page">
-                        <div class="col-sm stats">
-                            <div>
-                                <p class="font-weight-bold d-inline">GitHub:</p>
-                                <p class="d-inline"> https://github.com/NotANewt</p>
-                            </div>
-                            <div>
-                                <p class="font-weight-bold d-inline">Website:</p>
-                                <p class="d-inline long-link"> https://notanewt.github.io/portfolio/</p>
-                            </div>
-                            <div>
-                                <p class="font-weight-bold d-inline">LinkedIn:</p>
-                                <p class="d-inline vlong-link"> www.linkedin.com/in/meegan-r-anderson
-                                </p>
-                            </div>
-                            <div> <a href="Meegan_Anderson_Resume_WebDev_220206.pdf" target="_blank"
-                                    class="btn dark-btn font-page" tabindex="-1" role="button">Download Resume</a>
-                            </div>
-                        </div>
-                        <div class="col-sm stats">
-                            <div>
-                                <p class="font-weight-bold d-inline">Phone:</p>
-                                <p class="d-inline"> 312-344-3268</p>
-                            </div>
-                            <div>
-                                <p class="font-weight-bold d-inline">Mail:</p>
-                                <p class="d-inline"> meegan.r.anderson@gmail.com</p>
-                            </div>
-                            <div>
-                                <p class="font-weight-bold d-inline">Degree:</p>
-                                <p class="d-inline"> MA, BSc</p>
-                            </div>
-                        </div>
+                    <ul class=" bio-links">
+
+                        <li><strong>GitHub:</strong>
+                            <a href="https://github.com/NotANewt" target="_blank">github.com/NotANewt</a>
+                        </li>
+                        <li><strong>Phone:</strong> 312-344-3268</li>
+                        <li><strong>Website:</strong>
+                            <a href="https://notanewt.github.io/portfolio/"
+                                target="_blank">notanewt.github.io/portfolio/</a>
+                        </li>
+                        <li><strong>Mail:</strong>
+                            <a href="mailto:meegan.r.anderson@gmail.com">meegan.r.anderson@gmail.com</a>
+                        </li>
+                        <li><strong>LinkedIn:</strong>
+                            <a href="https://www.linkedin.com/in/meegan-r-anderson"
+                                target="_blank">@meegan-r-anderson</a>
+                        </li>
+
+                        <li><strong>Degree:</strong> MA, BSc</li>
+                    </ul>
+                    <div> <a href="Meegan_Anderson_Resume_WebDev_220206.pdf" target="_blank" class="btn btn-primary"
+                            tabindex="-1" role="button">Download Resume</a>
                     </div>
                 </div>
             </div>
@@ -112,86 +102,85 @@
     </div>
 
     <!-- Section: Skills -->
-    <div id="skills-section" class="section-dark">
+    <div id="skills-section" class="section section-dark">
 
         <div class="container">
 
             <div class="row">
 
                 <div class="col-sm">
-                    <div class="border-bottom font-title">
-                        <h4>Skills</h4>
-                    </div>
-                    <div class="font-page">
-                        <p class="mb-1">Development</p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">JAVASCRIPT</li>
-                            <li class="list-inline-item">HTML5</li>
-                            <li class="list-inline-item">CSS/CSS3</li>
-                            <li class="list-inline-item">SQL(MySQL, NoSQL)</li>
-                            <li class="list-inline-item">IDL</li>
-                            <li class="list-inline-item">RESTful API</li>
-                            <li class="list-inline-item">Agile</li>
+
+                    <h4 class="border-title">Skills</h4>
+
+                    <div class="skill-group">
+                        <h5>Development</h5>
+                        <ul>
+                            <li>JAVASCRIPT</li>
+                            <li>HTML5</li>
+                            <li>CSS/CSS3</li>
+                            <li>SQL(MySQL, NoSQL)</li>
+                            <li>IDL</li>
+                            <li>RESTful API</li>
+                            <li>Agile</li>
                         </ul>
                     </div>
-                    <div class="font-page">
-                        <p class="mb-1">Frameworks</p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">Bootstrap</li>
-                            <li class="list-inline-item">Bulma</li>
-                            <li class="list-inline-item">jQuery</li>
-                            <li class="list-inline-item">Node.js</li>
-                            <li class="list-inline-item">Handlebars.js</li>
-                            <li class="list-inline-item">Express</li>
-                            <li class="list-inline-item">Mongoose</li>
-                            <li class="list-inline-item">Jest</li>
+                    <div class="skill-group">
+                        <h5>Frameworks</h5>
+                        <ul>
+                            <li>Bootstrap</li>
+                            <li>Bulma</li>
+                            <li>jQuery</li>
+                            <li>Node.js</li>
+                            <li>Handlebars.js</li>
+                            <li>Express</li>
+                            <li>Mongoose</li>
+                            <li>Jest</li>
                         </ul>
                     </div>
-                    <div class="font-page">
-                        <p class="mb-1">Software</p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">VSCode</li>
-                            <li class="list-inline-item">Git</li>
-                            <li class="list-inline-item">Jira</li>
-                            <li class="list-inline-item">Trello</li>
-                            <li class="list-inline-item">MySQL Workbench</li>
-                            <li class="list-inline-item">Studio 3T</li>
-                            <li class="list-inline-item">GSuite</li>
-                            <li class="list-inline-item">Office Suite</li>
+                    <div class="skill-group">
+                        <h5>Software</h5>
+                        <ul>
+                            <li>VSCode</li>
+                            <li>Git</li>
+                            <li>Jira</li>
+                            <li>Trello</li>
+                            <li>MySQL Workbench</li>
+                            <li>Studio 3T</li>
+                            <li>GSuite</li>
+                            <li>Office Suite</li>
                         </ul>
                     </div>
 
                 </div>
 
                 <div class="col-sm">
-                    <div class="border-bottom font-title">
-                        <h4>Education</h4>
-                    </div>
-                    <div class="row font-page">
-                        <div class="col-sm">
-                            <p class="mb-1">Northwestern University</p>
+                    <h4 class="border-title">Education</h4>
+
+                    <div class="row ">
+                        <div class="col-sm-9">
+                            <h5>Northwestern University</h5>
                             <p>Coding Bootcamp</p>
                         </div>
-                        <div class="col-sm align-self-center">
-                            <p class="year-box align-items-center d-inline m-0 p-1">2021 - 2022</p>
+                        <div class="col-sm">
+                            <p class="year-box">2021 - 2022</p>
                         </div>
                     </div>
-                    <div class="row font-page">
-                        <div class="col-sm">
-                            <p class="mb-1">University of Colorado at Boulder</p>
+                    <div class="row ">
+                        <div class="col-sm-9">
+                            <h5>University of Colorado at Boulder</h5>
                             <p>Masters of Arts</p>
                         </div>
-                        <div class="col-sm align-self-center">
-                            <p class="year-box align-items-center d-inline m-0 p-1">2005 - 2007</p>
+                        <div class="col-sm">
+                            <p class="year-box">2005 - 2007</p>
                         </div>
                     </div>
-                    <div class="row font-page">
-                        <div class="col-sm">
-                            <p class="mb-1">University of Notre Dame</p>
+                    <div class="row ">
+                        <div class="col-sm-9">
+                            <h5>University of Notre Dame</h5>
                             <p>Bachelors of Science</p>
                         </div>
-                        <div class="col-sm align-self-center">
-                            <p class="year-box align-items-center d-inline m-0 p-1">2001 - 2005</p>
+                        <div class="col-sm">
+                            <p class="year-box">2001 - 2005</p>
                         </div>
                     </div>
 
@@ -211,12 +200,12 @@
     </div>
 
     <!-- Section: Project Showcase -->
-    <div id="project-showcase-section" class="section-light">
+    <div id="project-showcase-section" class="section section-light">
 
         <div class="container">
 
             <div id="about-me-text">
-                <h5 class="font-title">&#8212 Recent projects completed</h5>
+                <h6 class="font-title">Recent projects completed</h6>
                 <h2 class="font-title">Project Showcase</h2>
             </div>
 
@@ -225,58 +214,49 @@
     </div>
 
 
-    <!-- Section: Would you like to work with me? -->
-    <div id="action-section" class="section-dark">
+    <!-- Section: Action-->
+    <div id="action-section" class="section section-medium section-padded">
 
         <div class="container center-content">
 
-            <div>
-                <p class="action-text font-title">Would you like to work with me?</p>
-            </div>
-
-            <div>
-                <a href="Meegan_Anderson_Resume_WebDev_220206.pdf" target="_blank" class="btn transparent-btn font-page"
+            <p class="action-text font-title">Would you like to work with me?
+                <br>
+                <a href="Meegan_Anderson_Resume_WebDev_220206.pdf" target="_blank" class="btn btn-transparent"
                     tabindex="-1" role="button">Download Resume</a>
-            </div>
+            </p>
 
         </div>
 
     </div>
 
     <!-- Section: Contact Me -->
-
-    <div id="contact-me-section" class="section-light">
+    <div id="contact-me-section" class="section section-light">
 
         <div class="container">
             <div>
-                <h5 class="font-title">&#8212 Get in touch</h5>
+                <h6 class="font-title">Get in touch</h6>
                 <h2 class="font-title">Contact Me</h2>
             </div>
 
-
             <div class="row">
 
-                <div class="col-sm">
-                    <div>
-                        <p class="font-title">Let's develop something together!</p>
-                        <p class="font-page">If you like what you've seen so far, you can reach me through one the means
-                            listed below.</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-mobile-screen-button d-inline"></i>
-                        <p class="d-inline">Phone: 312-344-3268</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-paper-plane d-inline"></i>
-                        <p class="d-inline">Email: meegan.r.anderson@gmail.com</p>
+                <div class="col-md-5">
+                    <h3 class="font-title">Let's develop something together!</h3>
+                    <p>If you like what you've seen so far, you can reach me via the ways listed
+                        below.</p>
+                    <ul class="icon-list">
+                        <li><i class="fa-solid fa-mobile-screen-button"></i> 312-344-3268</li>
 
-                    </div>
-                    <i class="fa-brands fa-linkedin-in d-inline"></i>
-                    <p class="d-inline">LinkedIn: www.linkedin.com/in/meegan-r-anderson</p>
+                        <li><i class="fa-solid fa-paper-plane"></i><a href="mailto:meegan.r.anderson@gmail.com">
+                                meegan.r.anderson@gmail.com</a>
+                        </li>
+                        <li><i class="fa-brands fa-linkedin"></i> @meegan-r-anderson
+                        </li>
                     </ul>
                 </div>
 
-                <div class="col-sm">
+                <div class="col-md-6 offset-md-1">
+                    <h3 class="font-title bold">Send me a message</h3>
                     <form class="needs-validation">
                         <div class="form-row">
                             <div class="form-group col-md-6">
@@ -289,7 +269,7 @@
                         <div class="form-group">
                             <input type="text" class="form-control" id="inputMessage" placeholder="message" required>
                         </div>
-                        <button type="submit" class="btn dark-btn">Send Message</button>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -297,55 +277,37 @@
     </div>
 
     <!-- Section: Footer -->
-
     <footer id="footer" class="section-dark">
 
         <div class="container">
 
             <div class="row">
 
-                <div class="col-sm">
-                    <p class="font-title">Meegan Anderson</p>
-                    <p class="font-page">I am a full stack developer based in Illinois, United States.</p>
+                <div class="col-md-3">
+                    <h4 class="font-title">Meegan Anderson</h4>
+                    <p>I am a full stack developer based in Illinois, United States.</p>
                 </div>
 
-                <div class="col-sm">
-                    <p class="font-title">Useful Links</p>
-                    <ul class="font-page ul-no-style-no-indent">
-                        <li>About</li>
-                        <li>Skills</li>
-                        <li>Project Showcase</li>
+                <div class="col-md offset-md-1">
+                    <h4 class="font-title">Useful Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about-me-section">Bio</a></li>
+                        <li><a href="#skills-section">Skills</a></li>
+                        <li><a href="#project-showcase-section">Project Showcase</a></li>
                     </ul>
                 </div>
 
-                <div class="col-sm">
-                    <p class="font-title">Get in touch</p>
-                    <ul class="font-page ul-no-style-no-indent">
+                <div class="col-md">
+                    <h4 class="font-title">Get in touch</h4>
+                    <ul class="git-list">
                         <li>312-344-3268</li>
                         <li>meegan.r.anderson@gmail.com</li>
-                        <li>www.linkedin.com/in/meegan-r-anderson</li>
+                        <li>@meegan-r-anderson</li>
                     </ul>
                 </div>
-
-
-
-
             </div>
-
-
-
-
         </div>
-
-
-
-
-
     </footer>
-
-
-
-
 
 
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
