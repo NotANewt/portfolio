@@ -70,6 +70,15 @@ p {
   border-radius: 0px;
 }
 
+.btn.btn-secondary {
+  background-color: white;
+  color: #666;
+  border: 0px;
+  border-radius: 0px;
+  margin: 20px 0;
+  padding: 10px 15px;
+}
+
 .btn-transparent {
   background-color: none;
   color: whitesmoke;
@@ -126,6 +135,93 @@ p {
 .profile-img {
   width: 530px;
   height: 500px;
+}
+
+.project-gallary {
+  margin: 20px 0px;
+}
+
+.project-details {
+  display: none;
+}
+
+.project-item:hover .project-details {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  padding: 10%;
+  display: block;
+}
+
+.project-details h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.project-details ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-details li {
+  display: inline-block;
+}
+
+.project-details li + li:before {
+  content: "- ";
+}
+
+.project-item {
+  width: 31%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  margin: 1%;
+  background-color: white;
+}
+
+.project-item:hover .project-screenshot {
+  filter: grayscale(100%);
+  position: relative;
+  z-index: 0;
+  background-color: white;
+}
+
+.project-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-links li {
+  line-height: 180%;
+}
+
+.project-screenshot img {
+  width: 100%;
+}
+
+.screenshot-gallery {
+  margin-top: 20px;
+}
+
+.screenshot-img {
+  padding-left: 0;
+}
+
+.screenshot-img img {
+  width: 100%;
+  float: left;
 }
 
 .section {
