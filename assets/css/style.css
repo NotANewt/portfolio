@@ -1,7 +1,75 @@
-/* .nav-link {
-  font-size:
-} */
+/*
+ colors
+*/
 
+body {
+  background-image: url(../img/bg-splats.png);
+  background-color: #fad445;
+  color: #000;
+}
+
+footer {
+  background-color: #007fff;
+  color: #fff;
+}
+
+nav.navbar.navbar-dark {
+  background-color: #ff5855;
+  color: #fff;
+}
+
+.section-light h6 {
+  border-left: 3px solid #000;
+  color: #000;
+}
+
+.section-medium {
+  background-color: #ff5855;
+  color: #fff;
+}
+
+.section-dark {
+  background-color: #92d65f;
+  color: #fff;
+}
+
+/*
+ background images
+*/
+
+.bg-image-green-1 {
+  background-image: url("../img/splat-green-1.png");
+  background-position: 20% 101%;
+  background-repeat: no-repeat;
+}
+
+.bg-image-yellow-1 {
+  background-image: url("../img/splat-yellow-1.png");
+  background-position: 80% 101%;
+  background-repeat: no-repeat;
+}
+
+.bg-image-red-1 {
+  background-image: url("../img/splat-red-1.png"), url("../img/splat-green-2.png");
+  background-position: 80% 101%, 40% 0%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.bg-image-red-2 {
+  background-image: url("../img/splat-red-1.png");
+  background-position: 80% 101%;
+  background-repeat: no-repeat;
+}
+
+.bg-image-blue-1 {
+  background-image: url("../img/splat-blue-1.png"), url("../img/splat-red-2.png");
+  background-position: 80% 101%, 40% 0%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+/*
+ default tags
+*/
 * {
   font-family: "Open Sans", sans-serif;
 }
@@ -12,6 +80,7 @@ footer {
 
 h2 {
   line-height: 70px;
+  font-weight: 600;
 }
 
 h3 {
@@ -119,7 +188,7 @@ p {
 
 .icon-list {
   list-style: none;
-  margin: 20px 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -228,21 +297,6 @@ p {
   padding: 40px 0px;
 }
 
-.section-light {
-  background-color: white;
-  color: #666;
-}
-
-.section-dark {
-  background-color: #666;
-  color: whitesmoke;
-}
-
-.section-medium {
-  background-color: #b1b1b1;
-  color: white;
-}
-
 .section-padded {
   padding: 69px 0;
 }
@@ -272,6 +326,27 @@ p {
   text-align: center;
   padding: 5px 15px;
   margin-top: 5px;
+}
+
+/* rotations */
+.project-item {
+  transform: rotate(2.5deg);
+  box-shadow: 12px 12px rgba(0, 0, 0, 0.12);
+}
+.project-item:nth-child(2n) {
+  transform: rotate(-2deg);
+}
+.project-item:nth-child(3n) {
+  transform: rotate(1deg);
+}
+.project-item:nth-child(4n) {
+  transform: rotate(-2.5deg);
+}
+.project-item:nth-child(5n) {
+  transform: rotate(-3deg);
+}
+.project-item:nth-child(6n) {
+  transform: rotate(3deg);
 }
 
 /* Media Queries */
